@@ -1,0 +1,47 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('*').css("background-color", "orange"); //bütün elemanları seçer.
+            $('p').css("background-color", "pink");  //tüm paragrafları seçer.
+            $('#myId').css({"background-color": "yellow","font-size": 24});  //id ler # ile
+          
+            $('.myClass').css("background-color", "green"); //class lar . ile başlar
+            $('h4.myClass').css("background-color", "blue"); //başlığın class ını ayrıca belirttik
+            $("p[name='myName']").css("background-color", "gray");  //isimler çift tırnak ve p etiketiyle çağırılır."p[name='myName']"
+
+            //$('h4,ul').css( $('.myClass').css("background-color", "green"););
+            //$('li:eq(2)').css("background-color", "purple"); //3.elemanı boya
+            //$('p:lt(2)').css("background-color", "purple"); //3.elemandan öncekileri (lt) boya
+            //$('li:gt(1)').css("background-color", "purple"); //ilk 2 elemandan sonrasını boya
+            $('li:contains(muz)').css("background-color", "purple");
+           
+        });
+             
+
+    </script>
+
+</head>
+<body>
+    <p class="myClass">Bu paragraf class'a sahip.</p>
+    <h4 class="myClass">Bu başlık MyClass class ına sahip.</h4>
+
+    <p id="myId">Bu paragraf id e sahip.</p>
+
+    <p>Bu paragraf id siz ve class sız.</p>
+
+    <p name="myName">Bu paragraf isme sahip.</p>
+    <ul>
+        <li> elma</li>
+        <li>armut</li>
+        <li>portakal</li>
+        <li>muz</li>
+
+    </ul>
+
+</body>
+</html>

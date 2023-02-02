@@ -1,0 +1,96 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery Örnek</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#btn').click(function () {
+                $('#yazi').html("<b>Burası Bold</b>Burası değil.");
+
+            });
+            $('#goster').click(function () {
+
+                $('#yazi').show(1000);
+
+            });
+            $('#gizle').click(function () {
+
+                $('#yazi').hide(1000);
+
+            });
+            //$('#yazi').mouseenter(function () {
+
+            //    $('#yazi').css("background-color", "red");
+
+            //});
+            //$('#yazi').mouseleave(function () {
+
+            //    $('#yazi').css("background-color", "white");
+
+            //});
+            $('#yazi').hover(
+                function () {
+
+                $('#yazi').css("background-color", "purple");
+            },
+                function () {
+                    $('#yazi').css("background-color", "white");
+                
+
+                });
+
+            $('#input_alani').focus(function () {
+
+                $('#input_alani').css("background-color", "yellow");
+
+            });
+            $('#input_alani').blur(function () {
+
+                $('#input_alani').css("background-color", "white");
+
+            });
+            $('#yazi2').on({
+
+                mouseenter: function() {
+                    $('#yazi2').css("background-color", "lightgray");
+
+
+                },
+                mouseleave: function() {
+                    $('#yazi2').css("background-color", "lightblue");
+
+
+                },
+                click: function() {
+                    $('#yazi2').css("font-size", 32);
+
+
+                },
+                 dblclick: function () {
+                    $('#yazi2').css("font-size", 12);
+
+
+                }
+
+
+            });
+
+        });    
+
+    </script>
+
+</head>
+<body>
+    <p id="yazi">Hello WORLD!</p>
+    <button id="btn">İçeriği değiştir</button>
+    <button id="goster">Göster</button>
+    <button id="gizle">Gizle</button>
+    <p>Name:</p>
+    <input type="text" id="input_alani" />
+
+    <p id="yazi2">Bu paragraf bir çok işlemi kombine ederek çalışır</p>
+</body>
+</html>

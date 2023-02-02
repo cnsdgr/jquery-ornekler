@@ -1,0 +1,42 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Jquery Örnek</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <script>
+
+       function goz_kirp() {
+            $('.blink').css("color", "blue");
+            $('.blink').fadeOut(500);
+            $('.blink').fadeIn(500);         
+              
+
+        }
+
+        function geri_don() {
+            $('.blink').css("color", "black");
+
+        }
+
+
+        $(document).ready(function () {
+
+            $('p').css("font-size", 32);
+
+            setInterval(function () {
+                goz_kirp();
+            }, 500);
+           
+
+        });
+        
+
+    </script>
+
+</head>
+<body>
+    <p>Bu <span class="blink">yazı göz</span> kırpıyor</p>
+
+</body>
+</html>

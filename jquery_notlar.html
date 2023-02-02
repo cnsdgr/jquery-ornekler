@@ -1,0 +1,261 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        var x = 5;
+        var calisan = {
+            isim: "Cansu",
+            yas: 32,
+            is: "eğitim"
+
+        };
+        var dizi = [1, 2, 3, 4, 5];
+
+        function myFunc() {
+
+
+
+        }
+        //Callback
+        //$(document).ready(function () {
+
+        //    $("div").click(function (event) {
+
+        //        alert("Tıklandı: " + event.target);
+
+
+        //    });
+
+        //});
+        //-----------------------------------------------------
+
+        //charAt()
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "abcdefghıijklmnoprsq"
+        //        alert(yazi.charAt(5));
+
+
+        //    });
+
+        //});
+        //-------------------------------------------------------
+
+
+        //concat()
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "abcdefghıijklmnoprsq"
+        //        var yazi2 = "uüvyz";
+
+        //        alert(yazi.concat(yazi2));
+
+
+        //    });
+
+        //});
+        //--------------------------------------------------------
+
+        //foreach()   --yazi2 deki değerleri döndür
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "abcdefghıijklmnoprst"
+        //        var yazi2 = ["uüvyz", "abcd"];
+
+        //        function alerting(x) {
+
+        //            alert(x);
+
+        //        }
+
+        //        yazi2.forEach(alerting);
+
+        //    });
+        //    });
+        //--------------------------------------------------------
+
+        //indexOf()
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "Merhaba Dünya,Evren'e hoşgeldin!";
+        //        alert(
+        //            yazi.indexOf("Evren")
+
+
+        //        );
+
+
+
+
+
+        //    });
+        //});
+        //----------------------------------------------------------
+        //lenght()
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "Merhaba Dünya,Evren'e hoşgeldin!";
+        //        alert(
+        //            yazi.length
+
+
+        //        );
+
+        //    });
+        //});
+
+        //---------------------------------------------------------
+        //substr()
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "Merhaba Dünya,Evren'e hoşgeldin!";
+        //        var evren = "Evren";
+        //        eIndex = yazi.indexOf("Evren");
+        //        eLenght = evren.length;
+        //        alert(
+        //            // yazi.substr(5)---5.karakter sonrası
+        //            //yazi.substr(5,12) ----5.ile sondan 12. karakterler arasını gösterir
+
+        //            yazi.substr(eIndex, eLenght)
+
+        //        );
+
+        //    });
+        //});
+
+        //----------------------------------------------------------
+        //touppercase()  ---büyük harfe çevirir
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "Merhaba Dünya,Evren'e hoşgeldin!";
+
+        //        alert(
+        //            yazi.toUpperCase()
+
+        //        );
+
+        //    });
+        //});
+
+        //tolowercase() --küçük harfe çevirir
+
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var yazi = "Merhaba Dünya,Evren'e hoşgeldin!";
+
+        //        alert(
+
+
+        //            yazi.toLowerCase()
+
+        //        );
+
+        //    });
+        //});
+
+        //-----------------------------------------------------------
+        //sort()  --sıralama yapar
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var dizi = [3, 2, 7, 8, 9, 1, 4, 6, 5];
+               
+        //        alert(
+        //            dizi.sort()
+
+        //        );
+
+        //    });
+        //});
+
+        //-----------------------------------------------------
+        //reverse() --tersten diziyi olduğu gibi sıralar  (dizi.sort().reverse() önce sayı büyüklüğüne göre sonra tersten sıralar.)
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var dizi = [3, 2, 7, 8, 9, 1, 4, 6, 5];
+
+        //        alert(
+        //            dizi.sort().reverse()
+
+        //        );
+
+        //    });
+        //});
+
+        //------------------------------------------------
+        //pop()--dizinin son elemanını getirir.ve diziden çıkarır.
+
+        //aşağıdaki örnekte dziden son elemanı çıkarttık ve tekrar sıraladık
+        //$(document).ready(function () {
+
+        //    $("div").click(function () {
+
+        //        var dizi = [3, 2, 7, 8, 9, 1, 4, 6, 5];
+
+        //        alert(
+        //            dizi.pop()
+        //        );
+        //        alert(
+        //            dizi.sort()
+        //        );
+
+        //    });
+        //});
+
+        //push() --değeri sona ekleyip yazdık
+        $(document).ready(function () {
+
+            $("div").click(function () {
+
+                var dizi = [3, 2, 7, 8, 9, 1, 4, 6, 5];
+
+                
+                    dizi.push(10)
+               
+               alert(
+                  dizi
+               );
+
+            });
+        });
+
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+   <div id="yeni_div">
+       Dialog kutusunu görmek için buraya tıklayınız.
+
+
+
+   </div>
+
+</body>
+</html>
